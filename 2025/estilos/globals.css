@@ -1,0 +1,158 @@
+/* Font imports */
+@font-face {
+  font-family: 'Sora';
+  src: url('/fontes/Sora/Sora-VariableFont_wght.ttf') format('truetype');
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Space Grotesk';
+  src: url('/fontes/Space_Grotesk/SpaceGrotesk-VariableFont_wght.ttf') format('truetype');
+  font-weight: 300 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* External imports */
+@import "tailwindcss";
+@import "tw-animate-css";
+
+/* Color variables */
+:root {
+  /* Primary colors */
+  --principal: #ecddfe;
+  --caneta: #5e85fe;
+  --botões: #fedaf4;
+  --texto: #24272b;
+  --cinza: #878787;
+  --amarelo: #fffdc7;
+  --background: #f7f6f1;
+
+  /* Color variants */
+  --principal-escura: #61398f;
+  --principal-clara: #b279f6;
+  --secundária-escura: #d5a5a6;
+  --secundária-clara: #ffdede;
+  --botões-escura: #d9758d;
+  --botões-clara: #ffbacb;
+  --texto-escuro: #000000;
+  --texto-claro: #49346d;
+  --cinza-escuro: #878787;
+  --cinza-claro: #e5e7eb;
+  --bg-escuro: #d8d2cd;
+  --bg-claro: #fffcfa;
+}
+
+/* Global styles */
+* {
+  background: var(--background);
+}
+
+/* Typography system */
+/* Space Grotesk headings */
+h1, h2, h3, .destaque, .destaque-medio {
+  font-family: "Space Grotesk";
+  text-transform: none;
+}
+
+h1 {
+  font-size: 72px;
+  font-weight: 700;
+  line-height: 110%;
+}
+
+h2 {
+  font-size: 60px;
+  font-weight: 600;
+  line-height: 110%;
+}
+
+h3 {
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 120%;
+}
+
+.destaque {
+  font-size: 64px;
+  font-weight: 700;
+  font-style: normal;
+  line-height: 120%;
+  text-decoration: none;
+}
+
+.destaque-medio {
+  font-size: 48px;
+  font-weight: 700;
+  font-style: normal;
+  text-decoration: none;
+}
+
+/* Space Mono text elements */
+h4, h5, h6, p, button, a, 
+.legendas,  
+.menu {
+  font-family: "Sora";
+  text-transform: none;
+}
+
+h4 {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 120%;
+}
+
+h5 {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 120%;
+}
+
+h6 {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 110%;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+p {
+  font-size: 14px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 120%;
+  letter-spacing: 0.04em;
+  text-decoration: none;
+}
+
+.legendas {
+  font-size: 12px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 120%;
+  letter-spacing: 0.04em;
+  text-decoration: none;
+}
+
+/* Interactive elements */
+button {
+  font-size: 12px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 100%;
+  letter-spacing: 0.04em;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.menu {
+  font-size: 12px!important;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 100%;
+  letter-spacing: 0.08em;
+  text-decoration: none;
+  text-transform: uppercase;
+}
